@@ -1,0 +1,11 @@
+langchain
+langchain-core
+langchain-community
+langchain-openai
+langchain-groq
+langchain-anthropic
+langgraph
+streamlit
+streamlit-option-menu
+faiss-cpu
+bs4
