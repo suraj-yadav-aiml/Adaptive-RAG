@@ -16,6 +16,12 @@ jobs:
                 fetch-depth: 0
                 lfs: true
             
+            - name: Set up Git LFS
+              run: |
+                git lfs install
+                git lfs track "*.png"
+                git add .gitattributes
+            
             - name: Push the Code to Hugging Face Spaces
               env:
                 HF_TOKEN: ${{ secrets.HF_TOKEN }}
